@@ -11,7 +11,6 @@ parser.add_argument('--output', type=str, default="deserialized.txt", help='Outp
 args = parser.parse_args()
 
 ser_arr = insertion_sort(read_file(args.input).read_file())
-#ser_arr = read_file(args.input).read_file()
 writer = SerialaizeWriter('data.json')
 writer.write_file(ser_arr)
 print("Serialized data is written")
