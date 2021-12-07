@@ -11,8 +11,5 @@ class write_file:
     def write_file(self, array) -> None:
         """Function: reads data from file"""
 
-        # tmp = []
-        # for i in tqdm(range(len(array)), desc="Запись результата в файл"):
-        #         tmp.append(array[i].copy())
         json.dump(array, open(self.path,"w",encoding="windows-1251"), ensure_ascii=False, sort_keys=False, indent=4)
 
